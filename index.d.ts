@@ -5,7 +5,7 @@ declare namespace L {
     export type PolylineOptionsFn = (optionIdx: number) => PolylineOptions;
 
     export interface MultiOptions {
-        optionIdxFn: (latLng, prevLatLng, index, allLatlngs) => number;
+        optionIdxFn: (latLng: any, prevLatLng: any, index: any, allLatlngs: any) => number;
         // options for the index returned by optionIdxFn. If supplied with a function then it will be called with the index
         options: PolylineOptions[] | PolylineOptionsFn;
         // the context to call optionIdxFn (optional)
